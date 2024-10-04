@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>grid usecase3</title>
+        <style>
+            body{
+            margin: 0px;
+            padding: 0px;
+        }
+            .parent{
+                height: 100vh;
+                display: grid;
+                grid-template-rows: 10% 30% 50% 10%;
+                grid-template-columns: 28% 29% 28% 25%;
+              
+            }
+            .header{
+                background-color: lightcoral;
+                grid-column: 1/5;
+                display:flex;
+                justify-content: flex-start;
+                align-items: center;
+                color: whitesmoke;
+                margin: 5px;
+                padding: 5px;
+                }
+
+            .smallbox1{
+                background-color: lightsalmon;
+                grid-column: 1/2;
+                margin: 5px;
+                padding: 5px;
+                           }
+            .smallbox2{
+                background-color: rgb(193, 170, 160);
+                grid-column: 2/3;
+                margin: 5px;
+                padding: 5px;
+                           }
+            .smallbox3{
+                background-color: rgb(255, 122, 171);
+                grid-column: 3/4;
+                margin: 5px;
+                padding: 5px;
+                           }
+            .sidebar{
+                background-color: rgb(178, 156, 32);
+                grid-column: 4/5;
+                grid-row:2/4;
+                margin: 5px;
+                padding: 5px;
+            }
+            .maincontent{
+                background-color:brown;
+                grid-column: 1/4;
+                grid-row:3/4;
+                margin: 5px;
+                padding: 20px;
+            }
+            .footer{
+                background-color: lightslategray;
+                grid-row:4/5;
+                grid-column:1/5;
+                display:flex;
+                justify-content: flex-start;
+                align-items: center;
+                margin: 5px;
+                padding: 5px;
+            }
+
+        </style>
+        
+        </html>
+    </head>
+    <body>
+        <!..parent..>
+        <div class="parent">
+
+                <!-- grid item1-->
+                <div class="header">
+                    <h1>Header</h1>
+                </div>
+
+                <!-- grid item2-->
+                <div class="smallbox1">Smallbox1</div>
+
+                <!-- grid item3-->
+                <div class="smallbox2">Smallbox2</div>
+
+                <!-- grid item4-->
+                <div class="smallbox3">Smallbox3</div>
+
+                <!-- grid item5-->
+                <div class="sidebar">Sidebar</div>
+
+                <!-- grid item6-->
+                <div class="maincontent">Main-content</div>
+
+                <!-- grid item7-->
+                <div class="footer">Footer</div>
+
+                
+
+
+        </div>
+    </body>
+</html>
